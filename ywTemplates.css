@@ -54,11 +54,10 @@ div.business-lines {
  
 div.business-lines a       { color: #fff; opacity:1; background: rgba(33, 150, 243, 0.4); }
 div.business-lines:hover a { color: #fff; text-decoration: none; background: rgba(0, 0, 0, 0.2); } /* #2196f3 */
- 
 div.business-lines:hover { background-color: #2196f3; background: rgba(255,0,0,0,.4); }
  
 #PageList2 .widget-content ul li { padding: 5px 0; }
-#PageList2 .widget-content ul:last-child { font-size: 125%; font-weight: bolder; }
+#PageList2 .widget-content > ul:last-child { font-size: 125%; font-weight: bolder; }
  
 .linkedin-script {
      bottom: 0; left: 284px;
