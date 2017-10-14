@@ -3,21 +3,24 @@
      div.business-lines { display: inline-block; width: 45%; font-size: 100%; }
      div.linkedin-script { position: absolute; bottom: -165px; }
 }
-
-
+ 
+ 
 a:hover {
      text-decoration: underline;
 }
-
+ 
+.Header h1 a { font-size: 175%; }
 h3.post-title a {
      text-align: left;
      padding: 0 15px 0 0;
      color: #2196f3 !important;
 }
-
+ 
 /* container for buttons */
-div.business-lines-box { display: block; width: 100%; }
-
+div.business-lines-box { display: block; width: 100%; font-family: Arial; }
+ 
+div.business-lines-box .qa { font-size:145%; }
+ 
 /* backgrounds for home page buttons */
 .qa, .support, .healthcare, .communication { position: relative; }
 .qa::before, .support::before, .healthcare::before, .communication::before {
@@ -26,15 +29,15 @@ div.business-lines-box { display: block; width: 100%; }
   z-index: -1;
   width: 100%;
   height: 75px;
-  opacity:1; 
+  opacity:0.9; 
 }
-
+ 
 /* get the home page images */
-.qa, .qa::before                 { background-image: url(https://www.dropbox.com/s/nkqjc3h8xn7ro2y/QA.jpg); background-size: cover; background-position: top center; }
-.support, .support::before       { background-image: url(https://www.dropbox.com/s/2ghcjwvjlf5fwm1/support.jpg); background-size: cover; background-position: center;}
-.healthcare, .healthcare::before       { background-image: url(https://www.dropbox.com/s/fi69n62dd80bio3/healthcare.jpg); background-size: cover; background-position: left center; } 
-.communication, .communication::before { background-image: url(https://www.dropbox.com/s/v3nnoyyzqbqvkjs/communication.jpg); background-size: cover; background-position: left center; }
-
+.qa, .qa::before                 { background-image: url(https://dl.dropbox.com/s/eqmglc2tph4hcd3/QA.jpg); background-size: cover; background-position: top center; }
+.support, .support::before       { background-image: url(https://dl.dropbox.com/s/2hf0uxzeyx8s53n/support.jpg?); background-size: cover; background-position: center;}
+.healthcare, .healthcare::before       { background-image: url(https://dl.dropbox.com/s/w5ukr4tsr9958cm/healthcare.jpg); background-size: cover; background-position: left center; } 
+.communication, .communication::before { background-image: url(https://dl.dropbox.com/s/8fuket7dm7078dv/communication.jpg); background-size: cover; background-position: left center; }
+ 
 div.business-lines {
      width: 23%;
      height: 75px;
@@ -48,22 +51,22 @@ div.business-lines {
      font-size: 150%;
      /*background: rgba(255,0,0,0.3);*/
 }
-
+ 
 div.business-lines a       { color: #2196f3; opacity:1; }
 div.business-lines:hover a { color: #fff; text-decoration: none; background: rgba(33, 150, 243, 0.4); }
-
+ 
 div.business-lines:hover { background-color: #2196f3; background: rgba(255,0,0,0,.4); }
-
+ 
 #PageList2 .widget-content ul li { padding: 5px 0; }
-
+ 
 .linkedin-script {
      bottom: 0; right: 0;
      position: fixed;
 }
-
-/* WHO NEEDS THAT MUCH FOOTER SPACING?! */ 
-.widget.Attribution, .image-attribution, .widget.Attribution .copyright, .widget.Attribution, .widget.Attribution div,  { margin-top: 0; }
-
+ 
+/* WHO NEEDS THAT MUCH FOOTER SPACING?! */
+.widget.Attribution, .image-attribution, .widget.Attribution .copyright, .copyright, .widget.Attribution, .widget.Attribution div,  { margin-top: 0.1em !important; }
+ 
 /* WHAT'S WITH THE FOOTER?! */
 .widget.Attribution {
     margin-top: 0em;
@@ -71,10 +74,13 @@ div.business-lines:hover { background-color: #2196f3; background: rgba(255,0,0,0
     position: absolute;
     left: 150px;
     bottom: -30px;
+    display : none;
 }
-
+ 
 /* Accordions (for the CV page, which gets ...wordy) */
-/* Style the buttons that are used to open and close the accordion panel */
+/* Style from https://www.w3schools.com/howto/howto_js_accordion.asp */
+ 
+/* buttons are used to open and close the accordion panel */
 button.accordion {
     background-color: #eee;
     color: #444;
@@ -86,12 +92,12 @@ button.accordion {
     outline: none;
     transition: 0.4s;
 }
-
+ 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
-
+ 
 /* Style the accordion panel. Note: hidden by default */
 div.panel {
     padding: 0 18px;
@@ -101,7 +107,7 @@ div.panel {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-
+ 
 button.accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
@@ -109,7 +115,7 @@ button.accordion:after {
     float: right;
     margin-left: 5px;
 }
-
+ 
 button.accordion.active:after {
     content: '\2796'; /* Unicode character for "minus" sign (-) */
 }
