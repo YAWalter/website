@@ -10,6 +10,7 @@ a:hover {
 }
  
 .centered-top-container.sticky { height:100px; }
+a.return_link { margin-top: 28px; margin-bottom: 28px; }
 
 .Header h1 a { line-height: 175%; }
 .Header h1 a { font-size: 175%; }
