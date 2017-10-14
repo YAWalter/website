@@ -1,6 +1,6 @@
 @media screen and (max-width: 760px) {
      div.business-lines-box { width: 100%; }
-     div.business-lines { display: inline-block; width: 45%; font-size: 100%; }
+     div.business-lines { display: inline-block; width: 20%; font-size: 100%; }
      div.linkedin-script { position: absolute; bottom: -165px; }
 }
  
@@ -53,7 +53,7 @@ div.business-lines {
 }
  
 div.business-lines a       { color: #fff; opacity:1; background: rgba(0, 0, 0, 0.2); }
-div.business-lines:hover a { color: #2196f3; text-decoration: none; background: rgba(33, 150, 243, 0.4); } /*  */
+div.business-lines:hover a { color: #fff; text-decoration: none; background: rgba(33, 150, 243, 0.4); } /* #2196f3 */
  
 div.business-lines:hover { background-color: #2196f3; background: rgba(255,0,0,0,.4); }
  
