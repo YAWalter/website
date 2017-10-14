@@ -9,7 +9,7 @@ a:hover {
      text-decoration: underline;
 }
  
-.centered-top-container .sticky .animating { height:100px }
+.centered-top-container.sticky { height:100px }
 
 .Header h1 a { font-size: 175%; }
 h3.post-title a {
