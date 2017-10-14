@@ -12,7 +12,6 @@ a:hover {
 .centered-top-container.sticky { height:90px; }
 .item-view .return_link { margin-top: 28px; margin-bottom: 28px; }
 
-.Header h1 a { line-height: 125%; }
 .Header h1 a { font-size: 175%; }
 h3.post-title a {
      text-align: left;
